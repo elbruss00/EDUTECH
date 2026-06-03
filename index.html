@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutech - Ruang Inspirasi & Penyemangat Pelajar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Urbanist -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#0b0f19] text-white min-h-screen relative overflow-x-hidden selection:bg-emerald-500 selection:text-black">
+
+    <!-- Efek Pendaran Latar Belakang (Glowing Blobs) -->
+    <div class="absolute top-20 left-[-10%] w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-[40%] right-[-10%] w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[150px] pointer-events-none"></div>
+    <div class="absolute bottom-20 left-[20%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f19]/80 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo dari file Black Modern Computer Presentation.png -->
+            <a href="#" class="flex items-center gap-3 group">
+                <svg class="w-9 h-9 text-blue-400 transform group-hover:scale-110 transition duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 55C30 45 45 45 50 50C55 45 70 45 80 55V25C70 15 55 15 50 20C45 15 30 15 20 25V55Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round" fill="none"/>
+                    <path d="M25 25H75V55H25V25Z" stroke="currentColor" stroke-width="6" stroke-linejoin="round" class="opacity-40"/>
+                    <path d="M50 20V50" stroke="currentColor" stroke-width="4"/>
+                    <path d="M48 32L58 42M58 42H52M58 42V36" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="text-2xl font-extrabold tracking-wider bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">EDUTECH</span>
+            </a>
+            <!-- Menu Links -->
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-300">
+                <a href="#quotes" class="hover:text-blue-400 transition">Quotes</a>
+                <a href="#film" class="hover:text-emerald-400 transition">Film</a>
+                <a href="#musik" class="hover:text-blue-400 transition">Musik</a>
+                <a href="#personalisasi" class="hover:text-emerald-400 text-emerald-400 font-semibold transition">Fitur Mood</a>
+                <a href="#about" class="hover:text-blue-400 transition">Tentang Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="max-w-5xl mx-auto px-6 pt-24 pb-20 text-center relative z-10">
+        <span class="px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase bg-blue-500/10 text-blue-400 border border-blue-500/20">Ruang Inspirasi Pelajar</span>
+        <h1 class="text-5xl md:text-6xl font-black tracking-tight mt-6 mb-8 leading-tight">
+            Nyalakan Semangat Belajarmu, <br>
+            <span class="bg-gradient-to-r from-blue-400 via-teal-400 to-emerald-400 bg-clip-text text-transparent">Raih Masa Depanmu!</span>
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
+            Tugas menumpuk? Ujian bikin stres? Tenang, kamu tidak sendirian. <strong class="text-white">Edutech</strong> hadir membantu membangkitkan semangat, mengembalikan fokus, dan menumbuhkan rasa percaya diri untuk melewati segala tantangan belajar.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#personalisasi" class="px-8 py-4 bg-gradient-to-r from-blue-500 to-emerald-500 text-black font-bold rounded-xl shadow-lg shadow-emerald-500/20 hover:opacity-90 transition transform hover:-translate-y-0.5">
+                Coba Fitur Personalisasi Mood
+            </a>
+            <a href="#quotes" class="px-8 py-4 bg-gray-900 border border-gray-800 font-semibold rounded-xl hover:bg-gray-800 transition">
+                Lihat Semua Menu
+            </a>
+        </div>
+    </header>
+
+    <!-- MENU 1: QUOTES PENYEMANGAT -->
+    <section id="quotes" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-900">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-400 mb-4">💡 Kata-Kata Hari Ini</h2>
+            <p class="text-gray-400">Resapi kalimat-kalimat ini untuk mengembalikan fokus dan energi belajarmu.</p>
+        </div>
+        <!-- Grid Quotes -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Card Quote 1 (Gede & Menonjol) -->
+            <div class="p-8 rounded-2xl bg-gradient-to-br from-gray-900 to-[#121826] border border-blue-500/30 shadow-xl shadow-blue-500/5 md:col-span-2">
+                <span class="text-5xl text-blue-500 font-serif block mb-2">“</span>
+                <p class="text-2xl md:text-3xl font-bold italic text-white leading-relaxed mb-4">
+                    Pendidikan adalah jembatan yang menghubungkan mimpi dengan kenyataan.
+                </p>
+                <div class="w-12 h-1 bg-gradient-to-r from-blue-500 to-emerald-500 rounded"></div>
+            </div>
+            <!-- Quote Lainnya -->
+            <div class="p-8 rounded-2xl bg-[#0f1524] border border-gray-800 hover:border-gray-700 transition">
+                <p class="text-xl font-bold italic text-gray-200 mb-4">“Setiap hari adalah kesempatan baru untuk belajar sesuatu yang membuatmu lebih baik dari kemarin.”</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-[#0f1524] border border-gray-800 hover:border-gray-700 transition">
+                <p class="text-xl font-bold italic text-gray-200 mb-4">“Kesuksesan bukan hanya tentang bakat, tetapi tentang kemauan untuk terus belajar.”</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-[#0f1524] border border-gray-800 hover:border-gray-700 transition">
+                <p class="text-xl font-bold italic text-gray-200 mb-4">“Ilmu yang dipelajari hari ini akan menjadi bekal untuk menghadapi tantangan masa depan.”</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-[#0f1524] border border-gray-800 hover:border-gray-700 transition">
+                <p class="text-xl font-bold italic text-gray-200 mb-4">“Jangan takut melakukan kesalahan saat belajar, karena dari kesalahan lahir pemahaman.”</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-[#0f1524] border border-gray-800 hover:border-gray-700 transition">
+                <p class="text-xl font-bold italic text-gray-200 mb-4">“Buku membuka wawasan, tetapi semangat belajar membuka masa depan.”</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-[#0f1524] border border-gray-800 hover:border-gray-700 transition">
+                <p class="text-xl font-bold italic text-gray-200 mb-4">“Pendidikan bukan sekadar mendapatkan nilai tinggi, melainkan membangun karakter dan pengetahuan untuk kehidupan.”</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU 2: REKOMENDASI FILM (+ POSTER ASLI) -->
+    <section id="film" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-900">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-emerald-400 mb-4">🎬 Tontonan yang Membakar Semangat</h2>
+            <p class="text-gray-400">Istirahat sejenak dan saksikan bagaimana tekad dan impian bisa mengubah segalanya.</p>
+        </div>
+        <!-- Grid Film -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Film 1 - Laskar Pelangi -->
+            <div class="bg-[#0f1524] rounded-2xl overflow-hidden border border-gray-800 hover:border-emerald-500/40 transition duration-300 flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.tmdb.org/t/p/w500/8tVqFz5q4Yg71B4W1n6oepE1XwE.jpg" alt="Laskar Pelangi Poster" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">Indonesia (2008)</span>
+                        <h3 class="text-lg font-bold mt-2 text-white">Laskar Pelangi</h3>
+                        <p class="text-gray-400 text-sm mt-2">Kisah keterbatasan fasilitas sekolah yang tak mampu membendung mimpi besar anak-anak Belitong.</p>
+                    </div>
+                    <p class="text-xs text-gray-500 italic mt-4 border-t border-gray-800 pt-3">Pesan: Kekurangan fisik bukan alasan untuk berhenti bermimpi.</p>
+                </div>
+            </div>
+            <!-- Film 2 - Dead Poets Society -->
+            <div class="bg-[#0f1524] rounded-2xl overflow-hidden border border-gray-800 hover:border-emerald-500/40 transition duration-300 flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.tmdb.org/t/p/w500/ai40gZgS46S6pKo6RclXYTe9m9B.jpg" alt="Dead Poets Society Poster" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded">Barat (1989)</span>
+                        <h3 class="text-lg font-bold mt-2 text-white">Dead Poets Society</h3>
+                        <p class="text-gray-400 text-sm mt-2">Metode mengajar unik Pak Keating yang menginspirasi murid-muridnya untuk melihat dunia dari perspektif berbeda (*Carpe Diem*).</p>
+                    </div>
+                    <p class="text-xs text-gray-500 italic mt-4 border-t border-gray-800 pt-3">Pesan: Belajarlah untuk berpikir kritis dan mandiri.</p>
+                </div>
+            </div>
+            <!-- Film 3 - Steve Jobs -->
+            <div class="bg-[#0f1524] rounded-2xl overflow-hidden border border-gray-800 hover:border-emerald-500/40 transition duration-300 flex flex-col">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.tmdb.org/t/p/w500/96bW26bVp2KjCjGZgV87lMvW4g4.jpg" alt="Steve Jobs Poster" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded">Biografi</span>
+                        <h3 class="text-lg font-bold mt-2 text-white">Steve Jobs</h3>
+                        <p class="text-gray-400 text-sm mt-2">Perjalanan jatuh bangun inovator terbesar abad ini dalam mempertahankan visi radikalnya demi mengubah dunia.</p>
+                    </div>
+                    <p class="text-xs text-gray-500 italic mt-4 border-t border-gray-800 pt-3">Pesan: Kegagalan hanyalah batu loncatan menuju inovasi berikutnya.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Opsi Film Lainnya -->
+        <div class="mt-12 p-6 bg-gray-900/50 rounded-xl border border-gray-800">
+            <h3 class="text-lg font-bold text-white mb-4">Koleksi Film Inspiratif Lainnya:</h3>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-400">
+                <div class="flex items-center gap-2">🍿 <span class="text-gray-200">Sokola Rimba (2013)</span></div>
+                <div class="flex items-center gap-2">🍿 <span class="text-gray-200">Freedom Writers (2007)</span></div>
+                <div class="flex items-center gap-2">🍿 <span class="text-gray-200">Habibie dan Ainun (2012)</span></div>
+                <div class="flex items-center gap-2">🍿 <span class="text-gray-200">The Ron Clark Story</span></div>
+                <div class="flex items-center gap-2">🍿 <span class="text-gray-200">Forrest Gump</span></div>
+                <div class="flex items-center gap-2">🍿 <span class="text-gray-200">Kartini</span></div>
+                <div class="flex items-center gap-2">🍿 <span class="text-gray-200">Denias, Senandung di Atas Awan</span></div>
+                <div class="flex items-center gap-2">🍿 <span class="text-gray-200">Negeri 5 Menara</span></div>
+                <div class="flex items-center gap-2">🍿 <span class="text-gray-200">The Founder</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU 3: REKOMENDASI MUSIK -->
+    <section id="musik" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-900">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-blue-400 mb-4">🎧 Musik Pengusir Kantuk & Penambah Fokus</h2>
+            <p class="text-gray-400">Gunakan gelombang audio ini sebagai latar belakang belajar untuk performa otak maksimal.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="p-5 rounded-xl bg-[#0f1524] border border-gray-800 flex items-center gap-4">
+                <span class="text-2xl">🎵</span>
+                <div><h4 class="font-bold text-sm">Lo-Fi Study Beats</h4><p class="text-xs text-gray-500">Santai & anti panik</p></div>
+            </div>
+            <div class="p-5 rounded-xl bg-[#0f1524] border border-gray-800 flex items-center gap-4">
+                <span class="text-2xl">🎹</span>
+                <div><h4 class="font-bold text-sm">Piano Instrumental</h4><p class="text-xs text-gray-500">Lembut menenangkan</p></div>
+            </div>
+            <div class="p-5 rounded-xl bg-[#0f1524] border border-gray-800 flex items-center gap-4">
+                <span class="text-2xl">🎻</span>
+                <div><h4 class="font-bold text-sm">Musik Klasik (Mozart)</h4><p class="text-xs text-gray-500">Memicu fokus kognitif</p></div>
+            </div>
+            <div class="p-5 rounded-xl bg-[#0f1524] border border-gray-800 flex items-center gap-4">
+                <span class="text-2xl">🌧️</span>
+                <div><h4 class="font-bold text-sm">Suara Alam (Hujan)</h4><p class="text-xs text-gray-500">Efek rileksasi mendalam</p></div>
+            </div>
+            <div class="p-5 rounded-xl bg-[#0f1524] border border-gray-800 flex items-center gap-4">
+                <span class="text-2xl">🧠</span>
+                <div><h4 class="font-bold text-sm">Deep Focus Music</h4><p class="text-xs text-gray-500">Untuk materi berat</p></div>
+            </div>
+            <div class="p-5 rounded-xl bg-[#0f1524] border border-gray-800 flex items-center gap-4">
+                <span class="text-2xl">🎸</span>
+                <div><h4 class="font-bold text-sm">Acoustic Playlist</h4><p class="text-xs text-gray-500">Teman tugas malam</p></div>
+            </div>
+            <div class="p-5 rounded-xl bg-[#0f1524] border border-gray-800 flex items-center gap-4">
+                <span class="text-2xl">🍃</span>
+                <div><h4 class="font-bold text-sm">Relaxing Instrumental</h4><p class="text-xs text-gray-500">Peredam kecemasan</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FITUR PERSONALISASI MOOD -->
+    <section id="personalisasi" class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-900 relative z-10">
+        <div class="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-gray-900 via-[#111827] to-[#070b14] border border-emerald-500/30 shadow-2xl shadow-emerald-500/5 text-center">
+            <span class="text-sm font-bold text-emerald-400 tracking-widest uppercase">Fitur Cerdas Pelajar</span>
+            <h2 class="text-3xl font-black mt-3 mb-4">Bagaimana Suasana Hatimu Saat Ini?</h2>
+            <p class="text-gray-400 text-sm max-w-xl mx-auto mb-8">Pilih kondisimu sekarang, dan sistem Edutech akan langsung merekomendasikan resep hiburan penambah semangat yang paling klop!</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-10">
+                <button onclick="getRecommendation('stress')" class="px-6 py-3 bg-red-500/10 border border-red-500/30 text-red-400 font-bold rounded-xl hover:bg-red-500 hover:text-black transition">🤯 Stres Tugas Banyak</button>
+                <button onclick="getRecommendation('lost')" class="px-6 py-3 bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 font-bold rounded-xl hover:bg-yellow-500 hover:text-black transition">📉 Kehilangan Arah/Males</button>
+                <button onclick="getRecommendation('unfocus')" class="px-6 py-3 bg-blue-500/10 border border-blue-500/30 text-blue-400 font-bold rounded-xl hover:bg-blue-500 hover:text-black transition">🌀 Sulit Fokus/Ngantuk</button>
+            </div>
+
+            <div id="result-box" class="hidden p-6 rounded-xl bg-black/40 border border-gray-800 text-left transition duration-300">
+                <h4 class="font-bold text-emerald-400 text-lg mb-3">🎯 Resep Semangat Untukmu:</h4>
+                <p id="rec-text" class="text-gray-300 text-sm leading-relaxed"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: ABOUT US (CANVA EMBEDDED) -->
+    <section id="about" class="max-w-4xl mx-auto px-6 py-20 border-t border-gray-900 text-center">
+        <h2 class="text-3xl font-extrabold mb-6">👋 Kenali Kami Lebih Dekat</h2>
+        <p class="text-gray-400 leading-relaxed max-w-2xl mx-auto mb-10">
+            Kami percaya bahwa setiap pelajar memiliki potensi besar yang terpendam. Projek ini didedikasikan untuk membangun ekosistem saling mendukung antar siswa agar pantang menyerah menggapai cita-cita.
+        </p>
+        
+        <!-- Tampilan Canva Interaktif di Dalam Website -->
+        <div class="w-full rounded-2xl overflow-hidden border border-gray-800 bg-[#0f1524] shadow-2xl mb-8 relative aspect-[16/9]">
+            <iframe loading="lazy" class="absolute top-0 left-0 w-full h-full border-0"
+                src="https://www.canva.com/design/DAHG7r-YDmA/qQbbfRMF5ehCJXFC4xcQFg/view?embed" 
+                allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+        </div>
+
+        <a href="https://www.canva.com/design/DAHG7r-YDmA/qQbbfRMF5ehCJXFC4xcQFg/edit" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 font-bold rounded-xl hover:bg-blue-500 transition text-sm">
+            <span>Buka Langsung di Aplikasi Canva</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-gray-900 py-8 text-center text-xs text-gray-600">
+        <p>© 2026 EDUTECH. Dibuat dengan 💙 untuk seluruh Pelajar Indonesia yang Sedang Berjuang.</p>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MOOD -->
+    <script>
+        function getRecommendation(mood) {
+            const resultBox = document.getElementById('result-box');
+            const recText = document.getElementById('rec-text');
+            resultBox.classList.remove('hidden');
+            
+            if (mood === 'stress') {
+                recText.innerHTML = "<strong>Tonton Film:</strong> <em>The Ron Clark Story</em> atau <em>Forrest Gump</em> untuk menyadari bahwa segala proses berat bisa dilalui dengan ketulusan.<br><br><strong>Dengarkan Musik:</strong> 🌧️ <em>Suara Alam (Hujan/Ombak)</em> untuk menurunkan detak jantung dan meredakan kepanikan di kepalamu. Ambil napas dalam-dalam!";
+            } else if (mood === 'lost') {
+                recText.innerHTML = "<strong>Tonton Film:</strong> <em>Laskar Pelangi</em> atau <em>Negeri 5 Menara</em>. Lihat bagaimana anak-anak dengan fasilitas minim berani mengguncang dunia.<br><br><strong>Dengarkan Musik:</strong> 🎸 <em>Acoustic Study Playlist</em> untuk mengembalikan *mood* santai tapi bertekad baja sebelum mulai membuka buku lagi.";
+            } else if (mood === 'unfocus') {
+                recText.innerHTML = "<strong>Tonton Film:</strong> <em>Steve Jobs</em> atau <em>The Founder</em> untuk memicu letepan ambisi dan energi kompetitifmu.<br><br><strong>Dengarkan Musik:</strong> 🎻 <em>Musik Klasik (Mozart)</em> atau 🧠 <em>Deep Focus Music</em>. Musik jenis ini terbukti secara ilmiah menstimulasi gelombang beta otak agar kembali berkonsentrasi penuh.";
+            }
+        }
+    </script>
+</body>
+</html>
